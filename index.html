@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Memory Card jeu</title>
+    <meta name="description" content="">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda|Lobster">
+    <link rel="stylesheet" href="memory.css">
+    
+
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1 class="game_title">Memory Card By <strong>Miguel</strong></h1>
+        
+        </header>
+
+        <section class="score-panel">
+            <!--ajouter un timer -->
+            <span class="clock">0:00</span>
+            <ul class="stars">
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+            </ul>
+                <br>
+          <span class="movestext">Mouvements = </span><span  class="moves">0</span>  
+
+            <div class="restart">
+                <i class="fa fa-repeat"></i>
+            </div>
+        </section>
+
+        <ul class="deck">
+            <li class="card">
+                <i class="far fa-gem"></i> <!-- Remplacement des diamants en gemmes-->
+            </li>
+            <li class="card">
+                <i class="fas fa-plane"></i> <!-- Remplacement de l'avion en papier-->
+            </li>
+            <li class="card">
+                <i class="fas fa-bowling-ball"></i> <!-- Remplacement des ancres-->
+            </li>
+            <li class="card">
+                <i class="fa fa-bolt"></i>
+            </li>
+            <li class="card">
+                <i class="fas fa-wine-glass"></i> 
+            </li>
+            <li class="card">
+                <i class="fas fa-bowling-ball"></i> 
+            </li>
+            <li class="card">
+                <i class="fas fa-heart"></i> 
+            </li>
+            <li class="card">
+                <i class="fa fa-bicycle"></i>
+            </li>
+            <li class="card">
+                <i class="far fa-gem"></i> 
+            </li>
+            <li class="card">
+                <i class="fas fa-female"></i> 
+            </li>
+            <li class="card">
+                <i class="fas fa-heart"></i>
+            </li>
+            <li class="card">
+                <i class="fas fa-female"></i> 
+            </li>
+            <li class="card">
+                <i class="fa fa-bolt"></i>
+            </li>
+            <li class="card">
+                <i class="fa fa-bicycle"></i>
+            </li>
+            <li class="card">
+                <i class="fas fa-plane"></i> 
+            </li>
+            <li class="card">
+                <i class="fas fa-wine-glass"></i> 
+        </ul>
+    </div> <!-- fin du container jeu -->
+
+<!-- Modal Popup -->
+<div class="modal_background hide">
+    <div class="modal_body">
+        <button class="modal_button modal_cancel">x</button>
+        <div class="modal_heading">
+            <h1 class="modal_title">Félicitation , tu as gagné!</h1>
+        </div>
+        <!-- modal stats-->
+        <div class="modal_stats">
+            <span class="modal_time"> votre temps =</span>
+            <span class="modal_stars">étoiles =</span>
+            <span class="modal_moves">Mouvements =</span>
+        </div>
+        <div class="modal_buttons">
+            <button class="modal_button modal_replay">Rejouer</button>
+            </div>
+    </div>
+</div> <!-- fin modal-->
+
+<footer class="footer">
+  <p>Créer avec <i class="fas fa-heart"></i>
+    Par <a href="https://github.com/Jean-Miguel">Louise Jean Miguel</a></p> <p>© 2022</p>
+</footer>
+    <script src="uikit/dist/js/uikit-icons.min.js"></script>
+
+    <script src="memory.js"></script>
+</body>
+</html>
