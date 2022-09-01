@@ -156,9 +156,9 @@ function writeModalStats() {
     const starStat = document.querySelector('.modal_stars');
     const stars = getStars();
 
-    timeStat.innerHTML = `Time = ${clockTime}`;
-    moveStat.innerHTML = `Moves = ${moves}`;
-    starStat.innerHTML = `Stars = ${stars}`;
+    timeStat.innerHTML = `Temps = ${clockTime}`;
+    moveStat.innerHTML = `Mouvements = ${moves}`;
+    starStat.innerHTML = `étoiles = ${stars}`;
 }
 
 // obtient des étoiles
